@@ -1,0 +1,83 @@
+.course-page-audit {
+    overflow: hidden;
+    border:
+        var(--shape-border-width-1)
+        solid
+        var(--color-neutral-400);
+    border-radius: var(--shape-border-radius-3);
+    background-color: var(--color-neutral-50);
+}
+
+.course-page-audit__panel {
+    padding: var(--spacing-medium);
+}
+
+.course-page-audit__title {
+    margin: 0;
+    font: var(--type-headline-1-font);
+    letter-spacing: var(--type-headline-1-letter-spacing);
+}
+
+.course-page-audit__description {
+    margin-top: var(--spacing-xsmall);
+    color: var(--color-neutral-700);
+}
+
+.course-page-audit__route {
+    margin-top: var(--spacing-small);
+}
+
+.course-page-audit__route code {
+    overflow-wrap: anywhere;
+}
+
+.course-page-audit__actions {
+    margin-top: var(--spacing-medium);
+}
+
+.course-page-audit__status {
+    min-height: 1.5em;
+    margin-top: var(--spacing-small);
+}
+
+.course-page-audit__table-wrapper {
+    margin-top: var(--spacing-small);
+    overflow-x: auto;
+}
+
+.course-page-audit__table {
+    width: 100%;
+    min-width: 42rem;
+    border-collapse: collapse;
+}
+
+.course-page-audit__table caption {
+    padding-bottom: var(--spacing-small);
+    text-align: left;
+    color: var(--color-neutral-700);
+}
+
+.course-page-audit__table th,
+.course-page-audit__table td {
+    padding: var(--spacing-small);
+    border:
+        var(--shape-border-width-1)
+        solid
+        var(--color-neutral-300);
+    text-align: left;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+}
+
+.course-page-audit__table thead th {
+    background-color: var(--color-neutral-200);
+}
+
+.course-page-audit__table tbody th {
+    width: 14rem;
+}
+
+.course-page-audit__table td[data-changed="true"] {
+    font-weight: 600;
+    background-color: var(--color-neutral-200);
+}

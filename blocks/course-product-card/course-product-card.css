@@ -1,0 +1,98 @@
+.course-product-card {
+    overflow: hidden;
+    min-height: 12rem;
+    border:
+        var(--shape-border-width-1)
+        solid
+        var(--color-neutral-400);
+    border-radius: var(--shape-border-radius-3);
+    background-color: var(--color-neutral-50);
+}
+
+.course-product-card__content {
+    display: grid;
+}
+
+.course-product-card__media {
+    aspect-ratio: 4 / 3;
+    background-color: var(--color-neutral-200);
+}
+
+.course-product-card__media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.course-product-card__information {
+    padding: var(--spacing-medium);
+}
+
+.course-product-card__title {
+    margin: 0;
+    font: var(--type-headline-1-font);
+    letter-spacing: var(--type-headline-1-letter-spacing);
+}
+
+.course-product-card__price {
+    margin:
+        var(--spacing-xsmall)
+        0
+        0;
+    font: var(--type-headline-2-font);
+    letter-spacing: var(--type-headline-2-letter-spacing);
+}
+
+.course-product-card__description {
+    margin-top: var(--spacing-small);
+    color: var(--color-neutral-700);
+}
+
+.course-product-card__details {
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    gap:
+        var(--spacing-xxsmall)
+        var(--spacing-small);
+    margin-top: var(--spacing-medium);
+}
+
+.course-product-card__details dt {
+    font-weight: 600;
+}
+
+.course-product-card__details dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.course-product-card__actions {
+    margin:
+        var(--spacing-medium)
+        0
+        0;
+}
+
+.course-product-card__status {
+    margin: 0;
+    padding: var(--spacing-medium);
+}
+
+.course-product-card__status--error {
+    color: var(--color-alert-800);
+    background-color: var(--color-alert-200);
+}
+
+@media (min-width: 700px) {
+    .course-product-card__content {
+        grid-template-columns:
+      minmax(16rem, 2fr)
+      minmax(18rem, 3fr);
+    }
+
+    .course-product-card__media {
+        aspect-ratio: auto;
+        min-height: 24rem;
+    }
+}

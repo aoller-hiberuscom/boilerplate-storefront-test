@@ -1,0 +1,42 @@
+.course-callout {
+    border-inline-start:
+        var(--shape-border-width-4)
+        solid
+        var(--color-informational-500);
+    border-radius: var(--shape-border-radius-2);
+    background-color: var(--color-informational-200);
+}
+
+.course-callout__content {
+    padding: var(--spacing-medium);
+}
+
+.course-callout__title {
+    margin: 0;
+    font: var(--type-headline-1-font);
+    letter-spacing: var(--type-headline-1-letter-spacing);
+}
+
+.course-callout__body {
+    margin-top: var(--spacing-xsmall);
+}
+
+.course-callout__body > :first-child {
+    margin-top: 0;
+}
+
+.course-callout__body > :last-child {
+    margin-bottom: 0;
+}
+
+.course-callout__actions {
+    margin-top: var(--spacing-small);
+}
+
+.course-callout__actions > :first-child {
+    margin-top: 0;
+}
+
+.course-callout__actions > :last-child {
+    margin-bottom: 0;
+}

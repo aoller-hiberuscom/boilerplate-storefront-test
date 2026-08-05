@@ -1,0 +1,74 @@
+.course-add-to-cart {
+    border:
+        var(--shape-border-width-1)
+        solid
+        var(--color-neutral-400);
+    border-radius: var(--shape-border-radius-3);
+    background-color: var(--color-neutral-50);
+}
+
+.course-add-to-cart__panel {
+    padding: var(--spacing-medium);
+}
+
+.course-add-to-cart__title {
+    margin: 0;
+    font: var(--type-headline-1-font);
+    letter-spacing: var(--type-headline-1-letter-spacing);
+}
+
+.course-add-to-cart__description {
+    margin-top: var(--spacing-xsmall);
+    color: var(--color-neutral-700);
+}
+
+.course-add-to-cart__form {
+    display: grid;
+    gap: var(--spacing-small);
+    margin-top: var(--spacing-medium);
+}
+
+.course-add-to-cart__field {
+    display: grid;
+    gap: var(--spacing-xxsmall);
+}
+
+.course-add-to-cart__label {
+    font-weight: 600;
+}
+
+.course-add-to-cart__sku {
+    padding: var(--spacing-xsmall);
+    border-radius: var(--shape-border-radius-2);
+    background-color: var(--color-neutral-200);
+    overflow-wrap: anywhere;
+}
+
+.course-add-to-cart__quantity {
+    width: 8rem;
+    padding: var(--spacing-xsmall);
+}
+
+.course-add-to-cart__status {
+    min-height: 1.5em;
+    margin: 0;
+}
+
+.course-add-to-cart__status[data-status="error"],
+.course-add-to-cart__status[data-status="success"] {
+    font-weight: 600;
+}
+
+@media (min-width: 700px) {
+    .course-add-to-cart__form {
+        grid-template-columns:
+      minmax(12rem, 1fr)
+      minmax(8rem, 10rem)
+      max-content;
+        align-items: end;
+    }
+
+    .course-add-to-cart__status {
+        grid-column: 1 / -1;
+    }
+}

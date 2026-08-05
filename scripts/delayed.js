@@ -67,3 +67,8 @@ if (document.prerendering) {
 }
 
 // add delayed functionality here
+const courseParams = new URLSearchParams(window.location.search);
+
+if (courseParams.has('course-performance')) {
+  import('./course-delayed-demo.js');
+}

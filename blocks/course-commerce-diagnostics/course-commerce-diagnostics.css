@@ -1,0 +1,64 @@
+.course-commerce-diagnostics {
+    border: var(--shape-border-width-1) solid var(--color-neutral-400);
+    border-radius: var(--shape-border-radius-3);
+    background-color: var(--color-neutral-50);
+}
+
+.course-commerce-diagnostics__panel {
+    padding: var(--spacing-medium);
+}
+
+.course-commerce-diagnostics__title {
+    margin: 0;
+    font: var(--type-headline-1-font);
+    letter-spacing: var(--type-headline-1-letter-spacing);
+}
+
+.course-commerce-diagnostics__description {
+    margin-top: var(--spacing-xsmall);
+    color: var(--color-neutral-700);
+}
+
+.course-commerce-diagnostics__list {
+    display: grid;
+    grid-template-columns: minmax(10rem, 1fr) minmax(0, 2fr);
+    gap: 0;
+    margin: var(--spacing-medium) 0 0;
+    border: var(--shape-border-width-1) solid var(--color-neutral-300);
+    border-radius: var(--shape-border-radius-2);
+}
+
+.course-commerce-diagnostics__list dt,
+.course-commerce-diagnostics__list dd {
+    margin: 0;
+    padding: var(--spacing-small);
+    border-bottom:
+        var(--shape-border-width-1)
+        solid
+        var(--color-neutral-300);
+    overflow-wrap: anywhere;
+}
+
+.course-commerce-diagnostics__list dt {
+    font-weight: 600;
+    background-color: var(--color-neutral-200);
+}
+
+.course-commerce-diagnostics__list dt:last-of-type,
+.course-commerce-diagnostics__list dd:last-of-type {
+    border-bottom: 0;
+}
+
+.course-commerce-diagnostics__actions {
+    margin-top: var(--spacing-medium);
+}
+
+@media (max-width: 600px) {
+    .course-commerce-diagnostics__list {
+        display: block;
+    }
+
+    .course-commerce-diagnostics__list dt {
+        border-bottom: 0;
+    }
+}

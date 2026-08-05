@@ -1,0 +1,46 @@
+<div>
+    <h1>Event bus y carrito invitado</h1>
+
+    <p>
+        Dos bloques independientes compartirán el mismo estado
+        mediante el event bus de los drop-ins.
+    </p>
+</div>
+
+<div>
+    <div class="course-cart-indicator">
+        <div>
+            <div>Estado reactivo del carrito</div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="course-add-to-cart">
+        <div>
+            <div>sku</div>
+            <div>adb127</div>
+        </div>
+
+        <div>
+            <div>quantity</div>
+            <div>1</div>
+        </div>
+
+        <div>
+            <div>label</div>
+            <div>Añadir producto de prueba</div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <h2>Qué debemos observar</h2>
+
+    <ul>
+        <li>La operación utiliza Core GraphQL.</li>
+        <li>El indicador no consulta Commerce directamente.</li>
+        <li>El indicador cambia cuando recibe cart/data.</li>
+        <li>El carrito se conserva al recargar la página.</li>
+    </ul>
+</div>

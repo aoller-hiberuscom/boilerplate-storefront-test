@@ -1,0 +1,17 @@
+.course-expensive-widget {
+    border: var(--shape-border-width-1) solid var(--color-neutral-500);
+    border-radius: var(--shape-border-radius-2);
+    background-color: var(--color-neutral-200);
+}
+
+.course-expensive-widget__content {
+    padding: var(--spacing-medium);
+}
+
+.course-expensive-widget__content > :first-child {
+    margin-top: 0;
+}
+
+.course-expensive-widget__content > :last-child {
+    margin-bottom: 0;
+}
