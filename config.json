@@ -9,17 +9,6 @@
           "ac-price-book-id": "west_coast_inc",
           "ac-source-locale": "en-US"
         }
-      },
-      "analytics": {
-        "base-currency-code": "USD",
-        "environment": "Production",
-        "store-id": 1,
-        "store-name": "Commerce Optimizer Demo",
-        "store-url": "https://www.aemshop.net",
-        "store-view-id": 1,
-        "store-view-name": "Default Store View",
-        "website-id": 1,
-        "website-name": "Main Website"
       }
     }
   }
